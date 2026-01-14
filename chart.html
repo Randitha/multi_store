@@ -1,0 +1,99 @@
+<html>
+    <div style="width: 100%; max-width: 700px; margin: 0 auto;">
+    <canvas id="ageDistributionChart" width="400" height="400"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+
+    const ctx = document.getElementById('ageDistributionChart').getContext('2d');
+
+    const labels = [
+        'Infants (0-2 years)',
+        'Children (3-6 years)',
+        'Teenagers (7-14 years)',
+        'Adolescents (15-17 years)',
+        'Youth (18-24 years)',
+        'Adults (25-34 years)',
+        'Middle-aged (35-56 years)',
+        'Middle-aged and Elderly (57-67 years)',
+        'Elderly (68+ years)'
+    ];
+
+    const dataValues = [
+        0.00, // Infants (0-2 years)
+        0.56, // Children (3-6 years)
+        0.00, // Teenagers (7-14 years)
+        1.39, // Adolescents (15-17 years)
+        7.24, // Youth (18-24 years)
+        38.72, // Adults (25-34 years)
+        44.29, // Middle-aged (35-56 years)
+        7.24, // Middle-aged and Elderly (57-67 years)
+        0.56  // Elderly (68+ years)
+    ];
+
+    const backgroundColors = [
+        'rgba(255, 99, 132, 0.8)',   // Infants (Red)
+        'rgba(255, 159, 64, 0.8)',   // Children (Orange)
+        'rgba(255, 205, 86, 0.8)',   // Teenagers (Yellow)
+        'rgba(75, 192, 192, 0.8)',   // Adolescents (Teal)
+        'rgba(54, 162, 235, 0.8)',   // Youth (Blue)
+        'rgba(153, 102, 255, 0.8)',  // Adults (Purple)
+        'rgba(201, 203, 207, 0.8)',  // Middle-aged (Grey)
+        'rgba(0, 204, 102, 0.8)',    // Middle-aged and Elderly (Green)
+        'rgba(255, 0, 0, 0.8)'       // Elderly (Darker Red)
+    ];
+
+    new Chart(ctx, {
+        type: 'pie',
+        data: {
+            labels: labels,
+            datasets: [{
+                label: 'Percentage of Visitors',
+                data: dataValues,
+                backgroundColor: backgroundColors,
+                borderColor: '#ffffff',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false, // Allows the chart to resize freely
+            plugins: {
+                title: {
+                    display: true,
+                    text: 'Age Distribution of Visitors',
+                    font: {
+                        size: 18
+                    }
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            let label = context.label || '';
+                            if (label) {
+                                label += ': ';
+                            }
+                            if (context.parsed !== null) {
+                                label += context.parsed + '%';
+                            }
+                            return label;
+                        }
+                    }
+                },
+                legend: {
+                    position: 'right', // Place legend on the right for better readability with many slices
+                    align: 'center',
+                    labels: {
+                        boxWidth: 20,
+                        padding: 10
+                    }
+                }
+            },
+            layout: {
+                padding: 10
+            }
+        }
+    });
+
+    </script>
+</html>

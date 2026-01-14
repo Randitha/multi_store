@@ -1,0 +1,11 @@
+flask
+google-genai
+python-dotenv
+requests
+google-generativeai
+Flask-Session
+flask-cors
+flask-compress
+flask-socketio
+python-socketio
+eventlet

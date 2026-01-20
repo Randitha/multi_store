@@ -1,0 +1,201 @@
+2026-01-14 11:51:42,386 - INFO - [STARTUP] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://192.168.1.13:5005
+2026-01-14 11:51:42,386 - INFO - [STARTUP] - [33mPress CTRL+C to quit[0m
+2026-01-14 11:51:50,166 - INFO - [d86e3ec7] - Request started: GET / from 127.0.0.1
+2026-01-14 11:51:50,172 - INFO - [d86e3ec7] - Request completed: 200 in 0.005s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:51:50,315 - INFO - [d86e3ec7] - 127.0.0.1 - - [14/Jan/2026 11:51:50] "GET / HTTP/1.1" 200 -
+2026-01-14 11:51:54,919 - INFO - [8f0dffdc] - Request started: GET /store/chat-history from 127.0.0.1
+2026-01-14 11:51:54,920 - INFO - [8f0dffdc] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:51:54,921 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:51:54] "GET /store/chat-history HTTP/1.1" 200 -
+2026-01-14 11:51:55,203 - INFO - [0dae11df] - Request started: GET /favicon.ico from 127.0.0.1
+2026-01-14 11:51:55,204 - INFO - [0dae11df] - Request completed: 404 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:51:55,205 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:51:55] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2026-01-14 11:51:55,227 - INFO - [3e577dea] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:51:55,228 - INFO - [3e577dea] - [49decf99] Generating AI-powered suggestions
+2026-01-14 11:52:03,942 - INFO - [3e577dea] - Generating initial AI suggestions (no context)
+2026-01-14 11:52:05,976 - INFO - [3e577dea] - AI suggestions generated in 2.034s - Count: 8
+2026-01-14 11:52:05,976 - INFO - [3e577dea] - [49decf99] AI suggestions generated in 10.748s - Count: 8
+2026-01-14 11:52:06,173 - INFO - [3e577dea] - Request completed: 200 in 10.946s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:06,173 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:06] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 11:52:09,570 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:09] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-01-14 11:52:09,574 - ERROR - [STARTUP] - Error on request:
+Traceback (most recent call last):
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-01-14 11:52:13,525 - INFO - [b3fb587b] - Request started: GET / from 127.0.0.1
+2026-01-14 11:52:13,526 - INFO - [b3fb587b] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:13,527 - INFO - [b3fb587b] - 127.0.0.1 - - [14/Jan/2026 11:52:13] "GET / HTTP/1.1" 200 -
+2026-01-14 11:52:13,547 - INFO - [16895fd5] - Request started: GET /store/chat-history from 127.0.0.1
+2026-01-14 11:52:13,548 - INFO - [16895fd5] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:13,548 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:13] "GET /store/chat-history HTTP/1.1" 200 -
+2026-01-14 11:52:13,553 - INFO - [9bcdc150] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:52:13,553 - INFO - [9bcdc150] - [d47693e0] Generating AI-powered suggestions
+2026-01-14 11:52:14,077 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:14] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-01-14 11:52:14,081 - ERROR - [STARTUP] - Error on request:
+Traceback (most recent call last):
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-01-14 11:52:14,087 - INFO - [29f23446] - Request started: GET / from 127.0.0.1
+2026-01-14 11:52:14,088 - INFO - [29f23446] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:14,089 - INFO - [29f23446] - 127.0.0.1 - - [14/Jan/2026 11:52:14] "GET / HTTP/1.1" 200 -
+2026-01-14 11:52:14,099 - INFO - [930af6d8] - Request started: GET /store/chat-history from 127.0.0.1
+2026-01-14 11:52:14,100 - INFO - [930af6d8] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:14,101 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:14] "GET /store/chat-history HTTP/1.1" 200 -
+2026-01-14 11:52:14,105 - INFO - [891fd3c0] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:52:14,106 - INFO - [891fd3c0] - Periodic session cleanup completed
+2026-01-14 11:52:14,106 - INFO - [891fd3c0] - [85c7fbdc] Generating AI-powered suggestions
+2026-01-14 11:52:21,954 - INFO - [9bcdc150] - Using cached AI suggestions - Age: 16.0s
+2026-01-14 11:52:21,954 - INFO - [9bcdc150] - [d47693e0] AI suggestions generated in 8.401s - Count: 8
+2026-01-14 11:52:22,091 - INFO - [9bcdc150] - Request completed: 200 in 8.538s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:22,092 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:22] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 11:52:25,554 - INFO - [891fd3c0] - Using cached AI suggestions - Age: 19.6s
+2026-01-14 11:52:25,554 - INFO - [891fd3c0] - [85c7fbdc] AI suggestions generated in 11.448s - Count: 8
+2026-01-14 11:52:25,686 - INFO - [891fd3c0] - Request completed: 200 in 11.581s - Cache hits: 0, Parallel processing: 0
+2026-01-14 11:52:25,687 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:52:25] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 11:52:34,116 - INFO - [NO_ID] - [eaf6e987] Processing question: What are the peak hours for different age groups a...
+2026-01-14 11:52:34,116 - INFO - [NO_ID] - Cache MISS for key: de111609e7504249...
+2026-01-14 11:52:34,117 - INFO - [NO_ID] - [eaf6e987] Fetching fresh data from Tinybird
+2026-01-14 11:52:41,925 - INFO - [NO_ID] - [eaf6e987] Data fetched in 7.81s
+2026-01-14 11:52:41,926 - INFO - [NO_ID] - Data cached: 228125 records for key: de111609e7504249...
+2026-01-14 11:52:43,544 - INFO - [NO_ID] - [eaf6e987] Starting parallel data analysis
+2026-01-14 11:52:43,544 - INFO - [NO_ID] - [eaf6e987] Starting parallel data analysis
+2026-01-14 11:52:43,544 - INFO - [NO_ID] - [eaf6e987] Initial data size: 228125 records
+2026-01-14 11:52:43,544 - INFO - [NO_ID] - [eaf6e987] After filtering: 1000 records
+2026-01-14 11:52:43,551 - INFO - [NO_ID] - [eaf6e987] Created 5 chunks for parallel processing
+2026-01-14 11:52:43,559 - INFO - [NO_ID] - Selected 4 most relevant chunks out of 5 total chunks
+2026-01-14 11:52:43,559 - INFO - [NO_ID] - [eaf6e987] Selected 4 chunks for parallel processing
+2026-01-14 11:52:47,485 - INFO - [STARTUP] - Chunk 2 processed successfully - 1488 chars
+2026-01-14 11:52:47,486 - INFO - [NO_ID] - [eaf6e987] Chunk 2 result collected
+2026-01-14 11:52:48,186 - INFO - [STARTUP] - Chunk 4 processed successfully - 1564 chars
+2026-01-14 11:52:48,187 - INFO - [NO_ID] - [eaf6e987] Chunk 4 result collected
+2026-01-14 11:52:48,299 - INFO - [STARTUP] - Chunk 3 processed successfully - 1981 chars
+2026-01-14 11:52:48,300 - INFO - [NO_ID] - [eaf6e987] Chunk 3 result collected
+2026-01-14 11:52:48,300 - INFO - [NO_ID] - [eaf6e987] Parallel processing completed in 4.76s
+2026-01-14 11:52:52,828 - INFO - [NO_ID] - [eaf6e987] Analysis completed in 9.28s
+2026-01-14 11:52:52,829 - INFO - [NO_ID] - [eaf6e987] Question processed successfully in 18.71s - Answer length: 2892 chars
+2026-01-14 11:52:53,344 - INFO - [9a4ffb51] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:52:53,345 - INFO - [9a4ffb51] - [85a0efb6] Generating AI-powered suggestions
+2026-01-14 11:53:01,195 - INFO - [9a4ffb51] - Using cached AI suggestions - Age: 55.2s
+2026-01-14 11:53:01,196 - INFO - [9a4ffb51] - [85a0efb6] AI suggestions generated in 7.851s - Count: 8
+2026-01-14 11:53:01,344 - INFO - [9a4ffb51] - Request completed: 200 in 8.000s - Cache hits: 0, Parallel processing: 1
+2026-01-14 11:53:01,345 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:53:01] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 11:53:07,943 - INFO - [c195186d] - Request started: POST /store/generate-chart from 127.0.0.1
+2026-01-14 11:53:07,943 - INFO - [c195186d] - Cache HIT for key: de111609e7504249...
+2026-01-14 11:53:19,396 - INFO - [c195186d] - Request completed: 200 in 11.453s - Cache hits: 1, Parallel processing: 1
+2026-01-14 11:53:19,401 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:53:19] "POST /store/generate-chart HTTP/1.1" 200 -
+2026-01-14 11:53:27,468 - INFO - [NO_ID] - [b4f926b4] Processing question: How does the gender ratio of visitors vary across ...
+2026-01-14 11:53:27,469 - INFO - [NO_ID] - Cache HIT for key: de111609e7504249...
+2026-01-14 11:53:27,469 - INFO - [NO_ID] - [b4f926b4] Using cached data
+2026-01-14 11:53:29,330 - INFO - [NO_ID] - [b4f926b4] Starting parallel data analysis
+2026-01-14 11:53:29,330 - INFO - [NO_ID] - [b4f926b4] Starting parallel data analysis
+2026-01-14 11:53:29,330 - INFO - [NO_ID] - [b4f926b4] Initial data size: 228125 records
+2026-01-14 11:53:29,332 - INFO - [NO_ID] - [b4f926b4] After filtering: 1000 records
+2026-01-14 11:53:29,342 - INFO - [NO_ID] - [b4f926b4] Created 5 chunks for parallel processing
+2026-01-14 11:53:29,350 - INFO - [NO_ID] - Selected 4 most relevant chunks out of 5 total chunks
+2026-01-14 11:53:29,350 - INFO - [NO_ID] - [b4f926b4] Selected 4 chunks for parallel processing
+2026-01-14 11:53:32,430 - INFO - [STARTUP] - Chunk 3 processed successfully - 1057 chars
+2026-01-14 11:53:32,431 - INFO - [NO_ID] - [b4f926b4] Chunk 3 result collected
+2026-01-14 11:53:32,875 - INFO - [STARTUP] - Chunk 4 processed successfully - 1405 chars
+2026-01-14 11:53:32,875 - INFO - [NO_ID] - [b4f926b4] Chunk 4 result collected
+2026-01-14 11:53:33,525 - INFO - [STARTUP] - Chunk 2 processed successfully - 1266 chars
+2026-01-14 11:53:33,525 - INFO - [NO_ID] - [b4f926b4] Chunk 2 result collected
+2026-01-14 11:53:33,526 - INFO - [NO_ID] - [b4f926b4] Parallel processing completed in 4.20s
+2026-01-14 11:53:37,927 - INFO - [NO_ID] - [b4f926b4] Analysis completed in 8.60s
+2026-01-14 11:53:37,927 - INFO - [NO_ID] - [b4f926b4] Question processed successfully in 10.46s - Answer length: 2766 chars
+2026-01-14 11:53:38,443 - INFO - [8c0c8081] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:53:38,443 - INFO - [8c0c8081] - [f43bd71f] Generating AI-powered suggestions
+2026-01-14 11:53:51,226 - INFO - [8c0c8081] - Using cached AI suggestions - Age: 105.3s
+2026-01-14 11:53:51,226 - INFO - [8c0c8081] - [f43bd71f] AI suggestions generated in 12.784s - Count: 8
+2026-01-14 11:53:51,381 - INFO - [8c0c8081] - Request completed: 200 in 12.939s - Cache hits: 2, Parallel processing: 2
+2026-01-14 11:53:51,382 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:53:51] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 11:53:58,540 - INFO - [17e992b6] - Request started: POST /store/generate-chart from 127.0.0.1
+2026-01-14 11:53:58,542 - INFO - [17e992b6] - Cache HIT for key: de111609e7504249...
+2026-01-14 11:54:10,198 - INFO - [17e992b6] - Request completed: 200 in 11.658s - Cache hits: 3, Parallel processing: 2
+2026-01-14 11:54:10,201 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:54:10] "POST /store/generate-chart HTTP/1.1" 200 -
+2026-01-14 11:54:13,281 - INFO - [12880fd1] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-14 11:54:13,281 - INFO - [12880fd1] - [461cdac2] Generating AI-powered suggestions
+2026-01-14 11:54:21,416 - INFO - [12880fd1] - Generating initial AI suggestions (no context)
+2026-01-14 11:54:23,602 - INFO - [12880fd1] - AI suggestions generated in 2.187s - Count: 8
+2026-01-14 11:54:23,603 - INFO - [12880fd1] - [461cdac2] AI suggestions generated in 10.321s - Count: 8
+2026-01-14 11:54:23,781 - INFO - [12880fd1] - Request completed: 200 in 10.501s - Cache hits: 3, Parallel processing: 2
+2026-01-14 11:54:23,782 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 11:54:23] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-14 12:10:25,881 - INFO - [STARTUP] - 127.0.0.1 - - [14/Jan/2026 12:10:25] "[35m[1mGET /socket.io/?EIO=4&transport=websocket HTTP/1.1[0m" 500 -
+2026-01-14 12:10:25,889 - ERROR - [STARTUP] - Error on request:
+Traceback (most recent call last):
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 370, in run_wsgi
+    execute(self.server.app)
+    ~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 336, in execute
+    write(b"")
+    ~~~~~^^^^^
+  File "/Users/randithasenarathne/Documents/GitHub/multi_store/.venv/lib/python3.13/site-packages/werkzeug/serving.py", line 261, in write
+    assert status_set is not None, "write() before start_response"
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: write() before start_response
+2026-01-20 09:52:48,338 - INFO - [STARTUP] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5005
+ * Running on http://192.168.1.12:5005
+2026-01-20 09:52:48,338 - INFO - [STARTUP] - [33mPress CTRL+C to quit[0m
+2026-01-20 09:52:58,599 - INFO - [d85cd5c8] - Request started: GET / from 127.0.0.1
+2026-01-20 09:52:58,601 - INFO - [d85cd5c8] - Request completed: 200 in 0.002s - Cache hits: 0, Parallel processing: 0
+2026-01-20 09:52:58,604 - INFO - [d85cd5c8] - 127.0.0.1 - - [20/Jan/2026 09:52:58] "GET / HTTP/1.1" 200 -
+2026-01-20 09:52:58,719 - INFO - [b427eedf] - Request started: GET /store/chat-history from 127.0.0.1
+2026-01-20 09:52:58,719 - INFO - [b427eedf] - Request completed: 200 in 0.001s - Cache hits: 0, Parallel processing: 0
+2026-01-20 09:52:58,720 - INFO - [STARTUP] - 127.0.0.1 - - [20/Jan/2026 09:52:58] "GET /store/chat-history HTTP/1.1" 200 -
+2026-01-20 09:52:59,086 - INFO - [8396058e] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-20 09:52:59,087 - INFO - [8396058e] - [e284ac5d] Generating AI-powered suggestions
+2026-01-20 09:53:07,827 - INFO - [8396058e] - Generating initial AI suggestions (no context)
+2026-01-20 09:53:09,845 - INFO - [8396058e] - AI suggestions generated in 2.017s - Count: 8
+2026-01-20 09:53:09,845 - INFO - [8396058e] - [e284ac5d] AI suggestions generated in 10.759s - Count: 8
+2026-01-20 09:53:10,042 - INFO - [8396058e] - Request completed: 200 in 10.956s - Cache hits: 0, Parallel processing: 0
+2026-01-20 09:53:10,043 - INFO - [STARTUP] - 127.0.0.1 - - [20/Jan/2026 09:53:10] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-20 09:53:14,315 - INFO - [NO_ID] - [c00655ff] Processing question: What is the average age and gender distribution of...
+2026-01-20 09:53:14,316 - INFO - [NO_ID] - Cache MISS for key: de111609e7504249...
+2026-01-20 09:53:14,316 - INFO - [NO_ID] - [c00655ff] Fetching fresh data from Tinybird
+2026-01-20 09:53:27,104 - INFO - [NO_ID] - [c00655ff] Data fetched in 12.79s
+2026-01-20 09:53:27,105 - INFO - [NO_ID] - Data cached: 228125 records for key: de111609e7504249...
+2026-01-20 09:53:28,825 - INFO - [NO_ID] - [c00655ff] Starting parallel data analysis
+2026-01-20 09:53:28,825 - INFO - [NO_ID] - [c00655ff] Starting parallel data analysis
+2026-01-20 09:53:28,825 - INFO - [NO_ID] - [c00655ff] Initial data size: 228125 records
+2026-01-20 09:53:28,828 - INFO - [NO_ID] - [c00655ff] After filtering: 1000 records
+2026-01-20 09:53:28,835 - INFO - [NO_ID] - [c00655ff] Created 5 chunks for parallel processing
+2026-01-20 09:53:28,843 - INFO - [NO_ID] - Selected 4 most relevant chunks out of 5 total chunks
+2026-01-20 09:53:28,843 - INFO - [NO_ID] - [c00655ff] Selected 4 chunks for parallel processing
+2026-01-20 09:53:32,931 - INFO - [STARTUP] - Chunk 3 processed successfully - 1720 chars
+2026-01-20 09:53:32,931 - INFO - [NO_ID] - [c00655ff] Chunk 3 result collected
+2026-01-20 09:53:33,370 - INFO - [STARTUP] - Chunk 2 processed successfully - 1583 chars
+2026-01-20 09:53:33,370 - INFO - [NO_ID] - [c00655ff] Chunk 2 result collected
+2026-01-20 09:53:33,809 - INFO - [STARTUP] - Chunk 4 processed successfully - 2123 chars
+2026-01-20 09:53:33,809 - INFO - [NO_ID] - [c00655ff] Chunk 4 result collected
+2026-01-20 09:53:33,810 - INFO - [NO_ID] - [c00655ff] Parallel processing completed in 4.98s
+2026-01-20 09:53:39,964 - INFO - [NO_ID] - [c00655ff] Analysis completed in 11.14s
+2026-01-20 09:53:39,965 - INFO - [NO_ID] - [c00655ff] Question processed successfully in 25.65s - Answer length: 4293 chars
+2026-01-20 09:53:40,576 - INFO - [f4d1fd9d] - Request started: GET /store/suggestions from 127.0.0.1
+2026-01-20 09:53:40,577 - INFO - [f4d1fd9d] - [61884db0] Generating AI-powered suggestions
+2026-01-20 09:53:53,547 - INFO - [f4d1fd9d] - Using cached AI suggestions - Age: 43.7s
+2026-01-20 09:53:53,548 - INFO - [f4d1fd9d] - [61884db0] AI suggestions generated in 12.972s - Count: 8
+2026-01-20 09:53:53,735 - INFO - [f4d1fd9d] - Request completed: 200 in 13.159s - Cache hits: 0, Parallel processing: 1
+2026-01-20 09:53:53,737 - INFO - [STARTUP] - 127.0.0.1 - - [20/Jan/2026 09:53:53] "GET /store/suggestions HTTP/1.1" 200 -
+2026-01-20 09:54:04,912 - INFO - [36724132] - Request started: POST /store/generate-chart from 127.0.0.1
+2026-01-20 09:54:04,915 - INFO - [36724132] - Cache HIT for key: de111609e7504249...
+2026-01-20 09:54:16,505 - INFO - [36724132] - Request completed: 200 in 11.592s - Cache hits: 1, Parallel processing: 1
+2026-01-20 09:54:16,509 - INFO - [STARTUP] - 127.0.0.1 - - [20/Jan/2026 09:54:16] "POST /store/generate-chart HTTP/1.1" 200 -
